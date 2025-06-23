@@ -67,7 +67,7 @@ def scrape_ids(driver: WebDriver, event_ids: list[tuple[str, str]]):
         driver.back()
 
 
-def write_csv(event_ids: list[tuple[str, str]], filename='event_ids.csv'):
+def write_csv(event_ids: list[tuple[str, str]], filename='./data/event_ids.csv'):
     with open(filename, 'a', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerows(event_ids)
