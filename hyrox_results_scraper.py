@@ -39,9 +39,8 @@ def read_event_ids(
 
 
 if __name__ == '__main__':
-
     event_ids = read_event_ids(
-        event_name_filter=["2023", "2022", "2021"],
+        event_name_filter=None,
         file_name=OUTPUT_DIR + "event_ids.csv"
     )
 
